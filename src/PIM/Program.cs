@@ -9,6 +9,12 @@ namespace PIM {
             });
 
             UriMapping.Map("/PIM/menu", UriMapping.MappingUriPrefix + "/menu");
+
+            Handle.GET("/PIM/app-name", () => {
+                return new AppNamePartial();
+            });
+
+            UriMapping.Map("/PIM/app-name", UriMapping.MappingUriPrefix + "/app-name");
         }
     }
 }

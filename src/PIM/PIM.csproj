@@ -65,7 +65,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="wwwroot\PIM\AppIconPartial.html" />
     <Content Include="wwwroot\PIM\AppMenuPartial.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypedJSON Include="ViewModels\AppNamePartial.json">
+      <Generator>MsBuild:Compile</Generator>
+    </TypedJSON>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(StarcounterBin)\Starcounter.MsBuild.targets" />
