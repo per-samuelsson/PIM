@@ -1,0 +1,17 @@
+{
+  "Html": "/PIM/ProductTypePartial.html",
+  "Uri": "/pim/types/[unique_internal_identity]",
+
+  "Id$": "Windows",
+  "Name$": "Windows",
+  "Description$": "The Windows operating system",
+  "ImageUrl$": "",
+
+  "ParentType": {
+    "Id": "OperatingSystem",
+    "Name": "Operating systems",
+    "Uri": "/pim/types/[unique_internal_identity]"
+  },
+
+  "Children": [ { "$": { "Reuse": "PIM.ViewModels.ProductTypePartial" } } ]
+}
