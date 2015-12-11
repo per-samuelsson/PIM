@@ -1,6 +1,7 @@
 {
   "Html": "/PIM/ProductTypePartial.html",
-  "Uri": "/pim/types/[unique_internal_identity]",
+  "Uri": "/pim/types/[key]",
+  "$Uri": { "Bind": "UriBinding" },
 
   "Id$": "Windows",
   "Name$": "Windows",
@@ -10,7 +11,8 @@
   "ParentType": {
     "Id": "OperatingSystem",
     "Name": "Operating systems",
-    "Uri": "/pim/types/[unique_internal_identity]"
+    "Uri": "/pim/types/[key]",
+    "$Uri": { "Bind": "UriBinding" }
   },
 
   "Children": [ { "$": { "Reuse": "PIM.ViewModels.ProductTypePartial" } } ]

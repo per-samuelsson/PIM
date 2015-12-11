@@ -30,14 +30,14 @@ namespace PIM {
         /// <summary>
         /// The parent type
         /// </summary>
-        public ProductType Parent;
+        public ProductType ParentType;
 
         /// <summary>
         /// Product type children (only the direct ones).
         /// </summary>
         public QueryResultRows<ProductType> Children {
             get {
-                return Db.SQL<ProductType>("SELECT p FROM ProductType p WHERE p.Parent = ?", this);
+                return Db.SQL<ProductType>("SELECT p FROM ProductType p WHERE p.ParentType = ?", this);
             }
         }
     }
