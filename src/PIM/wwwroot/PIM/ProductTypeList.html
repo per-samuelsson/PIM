@@ -1,0 +1,29 @@
+﻿<template>
+    <template is="dom-bind">
+        <h3>All product types</h3>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Part of</th>
+                    <th>Description</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <template is="dom-repeat" items="{{model.ProductTypes}}">
+                    <tr>
+                        <td>{{item.Id$}}</td>
+                        <td>{{item.Name$}}</td>
+                        <td>{{item.ParentType.Name}}</td>
+                        <td>{{item.Description$}}</td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+
+        <dom-bind-notifier path="model" observed-object="{{model}}" deep></dom-bind-notifier>
+    </template>
+</template>

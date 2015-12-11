@@ -1,0 +1,8 @@
+{
+  "Html": "/PIM/ProductTypeList.html",
+  "ProductTypes": [
+    {
+      "$": { "Reuse": "PIM.ViewModels.ProductTypePartial" }
+    }
+  ]
+}

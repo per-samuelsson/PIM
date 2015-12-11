@@ -64,6 +64,9 @@
     <Compile Include="ProductType.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\ProductTypeList.json.cs">
+      <DependentUpon>ProductTypeList.json</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\ProductTypePartial.json.cs">
       <DependentUpon>ProductTypePartial.json</DependentUpon>
     </Compile>
@@ -71,6 +74,7 @@
   <ItemGroup>
     <Content Include="wwwroot\PIM\AppIconPartial.html" />
     <Content Include="wwwroot\PIM\AppMenuPartial.html" />
+    <Content Include="wwwroot\PIM\ProductTypeList.html" />
     <Content Include="wwwroot\PIM\ProductTypePartial.html" />
   </ItemGroup>
   <ItemGroup>
@@ -80,6 +84,11 @@
   </ItemGroup>
   <ItemGroup>
     <TypedJSON Include="ViewModels\ProductTypePartial.json">
+      <Generator>MsBuild:Compile</Generator>
+    </TypedJSON>
+  </ItemGroup>
+  <ItemGroup>
+    <TypedJSON Include="ViewModels\ProductTypeList.json">
       <Generator>MsBuild:Compile</Generator>
     </TypedJSON>
   </ItemGroup>
