@@ -16,7 +16,7 @@
                 <template is="dom-repeat" items="{{model.ProductTypes}}">
                     <tr>
                         <td>{{item.Id$}}</td>
-                        <td>{{item.Name$}}</td>
+                        <td><a href="{{item.Uri}}">{{item.Name$}}</a></td>
                         <td>{{item.ParentType.Name}}</td>
                         <td>{{item.Description$}}</td>
                     </tr>
