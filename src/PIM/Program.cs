@@ -21,6 +21,10 @@ namespace PIM {
 
             UriMapping.Map("/PIM/app-name", UriMapping.MappingUriPrefix + "/app-name");
 
+            Handle.GET("/pim", () => {
+                return Self.GET("/pim/types");
+            });
+
             Handle.GET("/pim/types/{?}", (string id) => {
                 var oid = DbHelper.Base64DecodeObjectID(id);
                 var type = DbHelper.FromID(oid) as ProductType;
