@@ -2,7 +2,7 @@ using Starcounter;
 
 namespace PIM.ViewModels {
 
-    partial class ProductTypePartial : Page, IBound<ProductType> {
+    partial class ProductTypePartial : Partial, IBound<ProductType> {
         public string UriBinding {
             get {
                 var t = this.Data;
@@ -12,7 +12,7 @@ namespace PIM.ViewModels {
     }
 
     [ProductTypePartial_json.ParentType]
-    partial class ProductTypeParent : Page, IBound<ProductType> {
+    partial class ProductTypeParent : Partial, IBound<ProductType> {
         public string UriBinding {
             get {
                 var t = this.Parent.Data as ProductType;
